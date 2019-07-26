@@ -1,6 +1,7 @@
-# CEM-Initial-Configuration-Setup-with-Python
 
-# Intitial Notes
+# TDM-to-IP-On-Ramp-Setup-with-Python
+
+# Read Me notes
 
 1. The python script provided here shows an example to provision muliple cisco products that serve the purpose of TDM to IP circuit emulation   i.e. NCS 4200s, to take those nodes to the point being ready to provision MPLS Tunnels and Services (Pseudowires).
 
@@ -10,7 +11,7 @@
 
 4. This script uses routing protocol OSPF since the test bench in the lab uses it.
 
-5. This script uses SyncE for network clock synchronization (covers for IOS-XE device, no network clock setup done for IOS-XR). 
+5. This script uses SyncE for network clock synchronization.
 
 6. It takes input data from an Excel file with a specific format. The information should be placed at the correct row/column so that the script can parse the information accordingly.
 
@@ -19,6 +20,9 @@
 8. The purpose of this demo is to show the initial configuration can be done in this way as well. Any required changes/updates in the script can be done by the users to make it better according to their requirements.
 
 9. It is required to setup management ip, enable telnet, username, password and enable password for each node before using the script.
+
+Other Project Derivatives:
+	https://github.com/CiscoSE/CEM-Initial-Configuration-Setup-with-Python
  
 # It Covers
 
@@ -46,11 +50,13 @@
 
 9. Setup Network Clock SyncE
 
+
+
 # It does not cover
 
 1. Configurations for EPNM server.
 
-2. Building MPLS Tunnels and Pseudowires
+2. Building MPLS Tunnels and Pseudo-wires
 
 # Excel file content format
 
@@ -66,3 +72,12 @@
 
 *The ip addresses and other information in the table below are just examples. Users need to use their own network information. 
 ![Alt text](images/exampleData.png?raw=true "ExampleExcelData")
+
+* MPLS label range is 16 to 32768.
+
+* If External bit source is "Y", then enter "R0" OR "R1". Users required to change in the code if more than one external source is required.
+
+* If External bit source is "N", then enter the physical SyncE interface(s).  
+
+* Clock source PRIORITIES range is 1 to 250 for IOS XE NCS 4200 device.
+
