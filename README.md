@@ -66,9 +66,9 @@ Other Project Derivatives:
 
 3. For multiple data in one cell (example, column: interfaces, ips, clock source interfaces),  use new line to separate each entry.
 
-4. On the column for rsvp, each cell format should be in text format, otherwise the percentage entry is converted to decimal entry (like: 100% becomes 1 when parsed by python). User can use either or % value(i.e. 100%) or, kbps value (i.e. 1000000) for IOS-XE (i.e. NCS 4200s) / gbps, mbps or kbps value (i.e. 10 gbps/10000 mpbs/10000000 kbps) for IOS-XR (i.e. ASR 9K) device. 
+4. On the column for rsvp, each cell format should be in text format, otherwise the percentage entry is converted to decimal entry (like: 100% becomes 1 when parsed by python). User can use either or % value(i.e. 100%) or, kbps value (i.e. 1000000). 
 
-5. The number of nodes for each IOS type should be given at the cell shown in red circle. Users need to have add/remove the number of rows with data matching that number.
+5. The number of NCS4200 nodes should be given at the cell shown in red circle. Users need to have add/remove the number of rows with data matching that number.
 
 *The ip addresses and other information in the table below are just examples. Users need to use their own network information. 
 ![Alt text](images/exampleData.png?raw=true "ExampleExcelData")
