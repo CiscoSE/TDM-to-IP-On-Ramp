@@ -24,7 +24,7 @@ from __future__ import absolute_import, division, print_function
 __author__ = "Tahsin A Chowdhury <tchowdhu@cisco.com>"
 __collaborator__= "Alan Liew <aliew@cisco.com>"
 
-__copyright__ = "Copyright (c) 2018 Cisco and/or its affiliates."
+__copyright__ = "Copyright (c) 2019 Cisco and/or its affiliates."
 __license__ = "Cisco Sample Code License, Version 1.0"
 
 
